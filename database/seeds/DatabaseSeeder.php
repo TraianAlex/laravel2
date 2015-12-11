@@ -13,12 +13,12 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         //Eloquent::unguard();
-        //$this->call('BooksTableSeeder');
 
         Model::unguard();
-        //$this->call('ArticlesTableSeeder');
+        $this->call('BooksTableSeeder');
+        $this->call('ArticlesTableSeeder');
         //$this->call('CommentsTableSeeder');
-        //$this->call('Users2TableSeeder');
+        $this->call('Users2TableSeeder');
         $this->call('UsersTableSeeder');
         Model::reguard();
     }
