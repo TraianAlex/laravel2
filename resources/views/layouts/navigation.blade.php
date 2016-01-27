@@ -14,7 +14,7 @@
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
 		<ul class="nav navbar-nav">
 			<li class="active"><a href="{{ URL::route('home') }}">Home</a></li>
-			<li><a href="founds">Get Founds</a></li>
+			<li><a href="{{url('founds')}}">Get Founds</a></li>
 			@if(Auth::check())
 				<li><a href="{{ URL::route('account-sign-out') }}">Sign out</a></li>
 				<li><a href="{{ URL::route('account-change-password') }}">Change password</a></li>

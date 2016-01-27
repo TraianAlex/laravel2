@@ -19,6 +19,12 @@ class CreateRecipesTable extends Migration
                 body TEXT NOT NULL
             )
         ");
+        // Schema::create('recipes', function($table)
+        // {
+        //     $table->increments('id');
+        //     $table->string('name', 255)->unique();
+        //     $table->text('body');
+        // });
     }
 
     /**
@@ -31,5 +37,6 @@ class CreateRecipesTable extends Migration
         DB::statement("
             DROP TABLE recipes
         ");
+        //Schema::drop('recipes');
     }
 }
